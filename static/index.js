@@ -1,5 +1,5 @@
-const input = document.querySelector('.galaxy-input');
-const searchBTN = document.querySelector('.search-btn');
+const input = document.getElementsByClassName('.galaxy-input').item(0);
+const searchBTN = document.getElementsByClassName('search-btn').item(0);
 
 
 document.addEventListener('contextmenu', event => event.preventDefault());
