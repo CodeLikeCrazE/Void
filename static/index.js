@@ -6,7 +6,7 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 
 
-searchBTN.addEventListener('click', async event => {
+searchBTN.onclick = async event => {
     event.preventDefault();
     window.navigator.serviceWorker.register('./sw.js', {
         scope: __uv$config.prefix
@@ -33,7 +33,7 @@ searchBTN.addEventListener('click', async event => {
         }
     });
 
-});
+}
 
 
 function isUrl(val = '') {
