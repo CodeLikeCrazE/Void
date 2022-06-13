@@ -1,10 +1,5 @@
-const input = document.getElementsByClassName('.galaxy-input').item(0);
+const input = document.getElementsByClassName('galaxy-input').item(0);
 const searchBTN = document.getElementsByClassName('search-btn').item(0);
-
-
-document.addEventListener('contextmenu', event => event.preventDefault());
-
-
 
 searchBTN.onclick = async event => {
     event.preventDefault();
